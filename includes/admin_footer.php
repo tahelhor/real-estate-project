@@ -3,7 +3,7 @@
 </div>
 
 <!-- Footer -->
-<footer class="bg-light text-center py-3" style="background-color: #F5EEDC !important; color: #183B4E; border-top: 2px solid #DDA853; margin-top: 2rem; position: relative; width: 100%;">
+<footer class="bg-light text-center py-3" style="background-color: #F5EEDC !important; color: #183B4E; border-top: 2px solid #DDA853; flex-shrink: 0; width: 100%; margin-top: 3rem;">
     <p style="margin: 0;">© 2025 RimAgency Admin. All rights reserved.</p>
 </footer>
 

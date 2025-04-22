@@ -1,3 +1,4 @@
+/*
 // Wait for the DOM to fully load
 document.addEventListener('DOMContentLoaded', function () {
     // 1. Fade-In Animation for Cards
@@ -54,4 +55,4 @@ styleSheet.textContent = `
         100% { transform: scale(1); }
     }
 `;
-document.head.appendChild(styleSheet);
+document.head.appendChild(styleSheet);*/

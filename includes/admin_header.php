@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="dashboard.php">RimAgency Admin</a>
@@ -38,10 +38,10 @@
     </div>
 </nav>
 
-<div class="container-fluid">
+<div class="container-fluid" style="flex: 1 0 auto; display: flex; flex-direction: column;">
     <div class="row">
-        <nav class="col-md-2 d-none d-md-block sidebar" style="position: fixed; top: 56px; bottom: 0; background-color: #F5EEDC; border-right: 2px solid #DDA853; box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1); padding: 1.5rem 0;">
-            <div class="sidebar-sticky">
+        <nav class="col-md-2 d-none d-md-block sidebar" style="position: fixed; top: 56px; left: 0; height: calc(100vh - 56px); width: 16.666667%; background-color: #F5EEDC; border-right: 2px solid #DDA853; box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1); z-index: 1000; overflow-y: auto;">
+            <div class="sidebar-sticky" style="padding: 1.5rem 0;">
                 <ul class="nav flex-column" style="gap: 10px;">
                     <li class="nav-item">
                         <a class="nav-link active" href="dashboard.php" style="color: #183B4E; padding: 0.75rem 1.5rem; border-radius: 5px; background-color: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); transition: background-color 0.2s ease;">Dashboard</a>
@@ -64,4 +64,4 @@
                 </ul>
             </div>
         </nav>
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4" style="margin-top: 30px;">
+        <main role="main" class="col-md-10 col-lg-10 offset-md-2 px-4" style="margin-top: 30px; flex: 1 0 auto;">
