@@ -1,0 +1,251 @@
+/* General Styles */
+body {
+    background-color: #F5EEDC; /* Light beige background */
+    color: #333; /* Dark gray for readability */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #27548A; /* Deep blue */
+    font-family: 'Arial', sans-serif; /* Consistent font */
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #fff; /* White text for contrast */
+    font-size: 1.1rem; /* Consistent font size */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #DDA853; /* Golden yellow on hover */
+}
+
+/* Section Styles */
+/*.search-filter,*/ .properties, .about-us, .contact-form {
+    background-color: #F5EEDC; /* Light beige */
+    padding: 2rem 0;
+}
+
+h2 {
+    color: #183B4E; /* Dark blue-gray */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p, label {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #DDA853; /* Golden yellow */
+    border: none;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #c7923e; /* Darker golden yellow */
+}
+
+/* Separator Styles */
+.section-separator {
+    border-top: 2px solid #DDA853; /* Golden yellow */
+    margin: 2rem 0;
+}
+
+/* Card Styles */
+.card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 400px; /* Fixed height for consistency */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top {
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Crop images to fit */
+}
+
+.card-body {
+    flex: 1; /* Take up remaining space */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.card-title {
+    color: #183B4E; /* Dark blue-gray */
+}
+
+.card-text {
+    color: #555;
+}
+
+/* About Us Section */
+.about-us img {
+    border-radius: 8px;
+}
+
+/* Contact Form */
+.contact-form .form-control {
+    border: 1px solid #ced4da;
+}
+
+.contact-form .form-control:focus {
+    border-color: #DDA853; /* Golden yellow */
+    box-shadow: 0 0 5px rgba(221, 168, 83, 0.5);
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    border-color: #DDA853;
+    box-shadow: 0 0 5px rgba(221, 168, 83, 0.5);
+}
+
+
+
+/* search field */
+
+
+.search-filter h2, .search-form h1 {
+    color: #183B4E; /* Dark blue-gray */
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.search-filter {
+    padding: 1.5rem 0; /* Slightly more padding for breathing room */
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center items vertically for better balance */
+    gap: 40px; /* Increased gap for better separation between columns */
+    max-width: 900px; /* Slightly narrower for a more focused layout */
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem; /* More padding for a cleaner look */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+}
+
+.search-form-column {
+    flex: 1;
+    min-width: 350px; /* Slightly smaller min-width for better proportions */
+    max-width: 400px; /* Limit max-width to prevent stretching */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.search-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Slightly smaller gap for compactness */
+}
+
+.search-form .form-group {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.search-form .form-control {
+    width: 100%;
+    height: 38px; /* Slightly shorter for a more compact look */
+    font-size: 0.95rem; /* Slightly smaller font for better fit */
+    border: 1px solid #d1d5db; /* Lighter border color */
+    border-radius: 6px; /* Softer corners */
+    padding: 0.5rem 0.75rem;
+    background-color: #f9fafb; /* Light background for inputs */
+    transition: all 0.2s ease; /* Smooth transition for focus */
+}
+
+.search-form .form-control:focus {
+    border-color: #DDA853;
+    box-shadow: 0 0 8px rgba(221, 168, 83, 0.3); /* Softer focus shadow */
+    background-color: #fff; /* White background on focus */
+}
+
+.search-form .form-control::placeholder {
+    color: #9ca3af; /* Lighter placeholder color */
+    font-size: 0.95rem;
+}
+
+.search-form select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path fill="%236b7280" d="M7 10l5 5 5-5z"/></svg>') no-repeat right 0.75rem center/12px 12px;
+    background-color: #f9fafb;
+}
+
+.search-form .btn-primary {
+    width: 120px; /* Slightly smaller button for better proportions */
+    height: 38px; /* Match input height */
+    font-size: 0.95rem;
+    padding: 0 1rem;
+    background-color: #DDA853;
+    border: none;
+    border-radius: 6px;
+    line-height: 1;
+    margin-top: 5px; /* Small margin to separate from fields */
+    transition: background-color 0.2s ease;
+}
+
+.search-form .btn-primary:hover {
+    background-color: #c7923e;
+}
+
+.search-image-column {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px; /* Slightly smaller max-width for balance */
+}
+
+.search-image-column img {
+    width: 100%;
+    height: 200px; /* Shorter height for better alignment with form */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for image */
+}
+
+@media (max-width: 768px) {
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem;
+        gap: 20px; /* Smaller gap on mobile */
+    }
+
+    .search-form-column {
+        min-width: 100%;
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .search-form .form-control {
+        width: 100%;
+    }
+
+    .search-form .btn-primary {
+        width: 100%; /* Full width button on mobile */
+        max-width: 200px; /* Limit max-width for better appearance */
+    }
+
+    .search-image-column {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .search-image-column img {
+        height: 250px; /* Slightly taller on mobile */
+    }
+}
